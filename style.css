@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Edu SA Beginner", cursive;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+  background-color: #1e2026;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 10;
+  background-color: #000;
+}
+.header h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+.container {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.text-area,
+.output-text {
+  position: relative;
+  color: #fff;
+  width: 90%;
+  height: 15rem;
+  overflow-y: auto;
+  resize: none;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-family: "Edu SA Beginner", cursive;
+  background-color: #1b1b1b;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  outline: none;
+}
+.text-area::placeholder {
+  color: #fff;
+}
+.btn {
+  padding: 1rem 2rem;
+  font-family: "Edu SA Beginner", cursive;
+  width: 20rem;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f2c94c;
+  transition: 0.3s ease;
+}
+.btn:active {
+  transform: translateY(-5px);
+}
+.output-text {
+  height: 15rem;
+  overflow-y: auto;
+}
+.footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  background-color: #000;
+  color: #fff;
+  margin-top: 5rem;
+}
+.footer p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.about-text {
+  max-width: 600px;
+  padding: 2rem;
+  font-weight: 500 !important;
+  font-size: 1.8rem !important;
+  text-align: center;
+}
+.radio-btn {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.radio-btn label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}

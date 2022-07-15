@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translation App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Translation App</h1>
+    </header>
+    <main class="container">
+      <textarea
+        class="text-area"
+        id="translate-input"
+        placeholder="Put your message which you want to translate"
+      ></textarea>
+      <p>Select Language</p>
+      <div class="radio-btn">
+        <div>
+          <input
+            type="radio"
+            id="dothraki"
+            name="language"
+            value="dothraki"
+            checked
+          />
+          <label for="dothraki">Dothraki</label>
+        </div>
+        <div>
+          <input type="radio" id="klingon" name="language" value="klingon" />
+          <label for="klingon">Kingon</label>
+        </div>
+        <div>
+          <input type="radio" id="yoda" name="language" value="yoda" />
+          <label for="yoda">Yoda</label>
+        </div>
+        <div>
+          <input type="radio" id="draconic" name="language" value="draconic" />
+          <label for="draconic">Draconic</label>
+        </div>
+      </div>
+      <button class="btn">Translate</button>
+      <p>Translation Will Come here 👇</p>
+      <div class="output-text" id="translate-output">Output</div>
+    </main>
+    <footer class="footer">
+      <p>About</p>
+      <p class="about-text">
+        Translate whatever you like to your selected langauge
+      </p>
+    </footer>
+  </body>
+</html>
