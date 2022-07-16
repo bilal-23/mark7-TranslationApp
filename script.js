@@ -13,6 +13,7 @@ async function translate() {
     try {
         const res = await fetch(`${url}${language}.json?text=${text}`);
         const data = await res.json();
+        console.log(res, data)
         if (res.status === 429) {
             throw new Error(data.error.message)
         }
